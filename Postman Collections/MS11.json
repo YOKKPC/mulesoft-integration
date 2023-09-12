@@ -1,0 +1,541 @@
+{
+	"info": {
+		"_postman_id": "3727e7a5-4e8e-45cb-9e69-08a69f23c259",
+		"name": "MS11 – REST – Search Member",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "IMS33 EAPI customers/member/status",
+			"_postman_id": "6ab3ac2d-5179-45de-af39-5f3f0d1d79eb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Client-Id",
+						"value": "{{clientId}}",
+						"type": "default"
+					},
+					{
+						"key": "Client-Secret",
+						"value": "{{clientSecret}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/customers/member/status",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"customers",
+						"member",
+						"status"
+					],
+					"query": [
+						{
+							"key": "personContactId",
+							"value": "0031e00000M3v1OAAR",
+							"disabled": true
+						},
+						{
+							"key": "legacyId",
+							"value": "2019034",
+							"disabled": true
+						},
+						{
+							"key": "idCard",
+							"value": "1111",
+							"disabled": true
+						},
+						{
+							"key": "dateOfBirth",
+							"value": "1965-10-18",
+							"disabled": true
+						},
+						{
+							"key": "primaryMobile",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "otherPhone",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "primaryEmail",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "firstNameTH",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "lastNameTH",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "firstName",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "lastName",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "passportNo",
+							"value": "J2999222",
+							"disabled": true
+						},
+						{
+							"key": "passportExpiryDate",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "externalCommerceId",
+							"value": "506043",
+							"disabled": true
+						},
+						{
+							"key": "isIncludingProfile",
+							"value": "true",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "offset",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IMS34 PAPI customers/member/status",
+			"_postman_id": "9a83327d-ff97-4abc-a769-96a3f5891f64",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "dsd@1234",
+						"username": "dsd-dev"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Client-Id",
+						"value": "28583345e28040a383c241e83cfcee80",
+						"type": "default"
+					},
+					{
+						"key": "Client-Secret",
+						"value": "016f258476444202bEBe2d7b543fFc61",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://dev-ch-gw.kingpower.com/kp-customer-pro-api/v1/customers/member/status?isIncludingProfile=true",
+					"protocol": "https",
+					"host": [
+						"dev-ch-gw",
+						"kingpower",
+						"com"
+					],
+					"path": [
+						"kp-customer-pro-api",
+						"v1",
+						"customers",
+						"member",
+						"status"
+					],
+					"query": [
+						{
+							"key": "personContactId",
+							"value": "0031e00000M3v1OAAR",
+							"disabled": true
+						},
+						{
+							"key": "legacyId",
+							"value": "2019034",
+							"disabled": true
+						},
+						{
+							"key": "idCard",
+							"value": "1111",
+							"disabled": true
+						},
+						{
+							"key": "dateOfBirth",
+							"value": "1965-10-18",
+							"disabled": true
+						},
+						{
+							"key": "primaryMobile",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "otherPhone",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "primaryEmail",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "firstNameTH",
+							"value": "คิวเอ",
+							"disabled": true
+						},
+						{
+							"key": "lastNameTH",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "firstName",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "lastName",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "passportNo",
+							"value": "J2999222",
+							"disabled": true
+						},
+						{
+							"key": "passportExpiryDate",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "isIncludingProfile",
+							"value": "true"
+						},
+						{
+							"key": "limit",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "offset",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IMS89 PAPI customers/non-member/status",
+			"_postman_id": "b9507a86-6222-4b2b-bccd-70203db5f88d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "dsd@1234",
+						"username": "dsd-dev"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Client-Id",
+						"value": "28583345e28040a383c241e83cfcee80",
+						"type": "default"
+					},
+					{
+						"key": "Client-Secret",
+						"value": "016f258476444202bEBe2d7b543fFc61",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://dev-ch-gw.kingpower.com/kp-customer-pro-api/v1/customers/non-member/status?externalCommerceId=506043",
+					"protocol": "https",
+					"host": [
+						"dev-ch-gw",
+						"kingpower",
+						"com"
+					],
+					"path": [
+						"kp-customer-pro-api",
+						"v1",
+						"customers",
+						"non-member",
+						"status"
+					],
+					"query": [
+						{
+							"key": "externalCommerceId",
+							"value": "506043"
+						},
+						{
+							"key": "isIncludingProfile",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IMS35 SAPI CRM – Get Contact",
+			"_postman_id": "af00325d-431c-4ea3-a0ee-59bf91465a0c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Client-Id",
+						"value": "0726000aadc24ccb8fd5f61834af0026",
+						"type": "text"
+					},
+					{
+						"key": "Client-Secret",
+						"value": "6c4da965c9E848088A24171a6e6EC5DD",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {}
+				},
+				"url": "https://dev-ch-gw.kingpower.com/kp-sfdc-crm-sys-api/v1/contact/0031e00000JREY8AAP"
+			},
+			"response": [
+				{
+					"id": "0ff09449-0fd4-420b-af5b-dba52fc6ae92",
+					"name": "IMS35-SYS-GET-contact",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Client-Id",
+								"value": "0726000aadc24ccb8fd5f61834af0026",
+								"type": "text"
+							},
+							{
+								"key": "Client-Secret",
+								"value": "6c4da965c9E848088A24171a6e6EC5DD",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "https://dev-ch-gw.kingpower.com/kp-sfdc-crm-sys-api/v1/contact/0031e00000JREY8AAP"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 13 Jul 2023 04:09:37 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-correlation-id",
+							"value": "98300c87-7577-41ad-ac33-15fc56b81c5d"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "7e5eabe75b5445a7-BKK"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"responseCode\": 200,\n    \"responseStatus\": \"Success\",\n    \"correlationId\": \"98300c87-7577-41ad-ac33-15fc56b81c5d\",\n    \"timestamp\": \"2023-07-13T11:09:37.479+07:00\",\n    \"content\": [\n        {\n            \"accountId\": \"0011e00000Wm8PjAAJ\"\n        }\n    ],\n    \"error\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "IMS60 SAPI CRM – Get Account by Id",
+			"_postman_id": "6b5aad48-0afd-4fdc-8b3e-040cf089f1b1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Client-Id",
+						"value": "0726000aadc24ccb8fd5f61834af0026",
+						"type": "text"
+					},
+					{
+						"key": "Client-Secret",
+						"value": "6c4da965c9E848088A24171a6e6EC5DD",
+						"type": "text"
+					},
+					{
+						"key": "X-Correlation-Id",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {}
+				},
+				"url": "https://dev-ch-gw.kingpower.com/kp-sfdc-crm-sys-api/v1/account/0011e00000Wm8PjAAJ"
+			},
+			"response": [
+				{
+					"id": "cc918d61-6802-45dc-b195-0a9ad9857c3f",
+					"name": "SYS-GET-account-by-id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Client-Id",
+								"value": "0726000aadc24ccb8fd5f61834af0026",
+								"type": "text"
+							},
+							{
+								"key": "Client-Secret",
+								"value": "6c4da965c9E848088A24171a6e6EC5DD",
+								"type": "text"
+							},
+							{
+								"key": "X-Correlation-Id",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": "https://dev-ch-gw.kingpower.com/kp-sfdc-crm-sys-api/v1/account/0011e00000Wm8PjAAJ"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 12 Jul 2023 07:54:33 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-correlation-id",
+							"value": "bf1ab176-6e87-409a-985e-d2c6a3fa8c9e"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "7e57b80379d94b9b-BKK"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"responseCode\": 200,\n    \"responseStatus\": \"Success\",\n    \"correlationId\": \"bf1ab176-6e87-409a-985e-d2c6a3fa8c9e\",\n    \"timestamp\": \"2023-07-12T14:54:33.517+07:00\",\n    \"content\": [\n        {\n            \"id\": \"0011e00000Wm8PjAAJ\",\n            \"lastName\": \"MainAccountTest\",\n            \"firstName\": \"MainAccount\",\n            \"salutation\": null,\n            \"middleName\": null,\n            \"fax\": null,\n            \"description\": null,\n            \"createdDate\": \"2023-04-24T06:51:03.000Z\",\n            \"createdById\": \"0055i000005sWXHAA2\",\n            \"lastModifiedDate\": \"2023-06-29T09:59:11.000Z\",\n            \"lastModifiedById\": \"0051e000003j943AAA\",\n            \"personContactId\": \"0031e00000JREY8AAP\",\n            \"personMobilePhone\": \"0861234567\",\n            \"personHomePhone\": null,\n            \"personOtherPhone\": null,\n            \"personEmail\": \"kpcustomer01@gmail.com\",\n            \"personBirthdate\": \"1965-10-18\",\n            \"memberId\": \"55555555\",\n            \"receivedDate\": null,\n            \"businessDescription\": null,\n            \"memberGroupDescription\": null,\n            \"programDescription\": null,\n            \"subProgramDescription\": null,\n            \"accountType\": \"Person Account\",\n            \"cardCodeType\": null,\n            \"cardEndDate\": null,\n            \"cardReason\": null,\n            \"cardShoppingCard\": null,\n            \"cardStartDate\": null,\n            \"cardStatus\": null,\n            \"cardTier\": null,\n            \"currentTierSpending\": null,\n            \"customerStatus\": \"Active\",\n            \"externalCommerceId\": \"666666\",\n            \"externalFirsterId\": null,\n            \"lastPrivilegeUsage\": null,\n            \"legacyId\": \"2019034\",\n            \"memberCaratPoint\": null,\n            \"memberEPurse\": null,\n            \"memberLead\": null,\n            \"memberRenewDate\": null,\n            \"memberTier\": null,\n            \"memebrDiscount\": null,\n            \"nextTierSpending\": null,\n            \"registerChannel\": null,\n            \"relatedToMemberAccount\": null,\n            \"relationshipManagement\": null,\n            \"secondaryMobile\": null,\n            \"type\": \"Member\",\n            \"dateOfApply\": null,\n            \"appleSocialIdPc\": null,\n            \"facebookSocialIdPc\": null,\n            \"firstNameThaiPc\": \"ยศ\",\n            \"genderPc\": null,\n            \"idCardPc\": \"1111\",\n            \"instagramSocialIdPc\": null,\n            \"kuaishouSocialIdPc\": null,\n            \"lastNameThaiPc\": \"สยาม\",\n            \"lineUidPc\": \"12345\",\n            \"nationalityPc\": \"THA\",\n            \"pantipSocialIdPc\": null,\n            \"preferredChannelOfContactPc\": null,\n            \"salutationThaiPc\": null,\n            \"secondaryEmailPc\": null,\n            \"staffIdPc\": null,\n            \"staffPc\": false,\n            \"tikTokSocialIdPc\": null,\n            \"toutiaoSocialIdPc\": null,\n            \"twitterSocialIdPc\": null,\n            \"weChatSocialIdPc\": null,\n            \"weiboSocialIdPc\": null,\n            \"xiaohongshuSocialIdPc\": null,\n            \"youtubeSocialIdPc\": null\n        }\n    ],\n    \"error\": {}\n}"
+				}
+			]
+		}
+	]
+}
